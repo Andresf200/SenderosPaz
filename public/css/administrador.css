@@ -1,0 +1,115 @@
+/* Estilos globales */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*Fin estilos globales */
+
+/* Contenedor global */
+.contenedor_global{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 15% 60% 15%;
+    grid-template-areas: "header header header header header"
+                         "nav article article article article"
+                         "nav article article article article"
+                         "nav footer footer footer footer"
+
+}
+/* Fin Contenedor global */
+
+/*Menu oculto en el header*/
+.nav-item{
+    display: none;
+}
+/* Menu oculto en el header */
+
+/* Menu superior */
+header{
+    grid-area: header;
+    background: linear-gradient(135deg, rgba(3,37,64,1) 55%, rgba(3,37,64,1) 69%, rgba(12,110,207,1) 69%);
+}
+/* Fin menu superior */
+
+/*Clase del menu en bootstrap  */
+.navbar{
+    z-index: 4;
+    background: linear-gradient(135deg, rgb(5,59,101) 55%, rgb(5,59,101) 69%, rgba(124, 206, 233, 1)69%);
+}
+/* Fin clase del menu en bootstrap */
+
+/* Espaciado de los logos */
+.imagen1{
+    padding-right: 40px;
+    border-right: 1px solid white;
+}
+.imagen2{
+    padding-right: 30px;
+    padding-left: 20px;
+}
+/* Espaciado de los logos */
+
+/*Menu lateral izquierd0 */
+nav{
+    grid-area: nav;
+    text-align: center;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, rgb(5,59,101) 55%, rgb(5,59,101) 69%, rgba(124, 206, 233, 1)69%);
+}
+/* Fin menu lateral izquierdo */
+
+/* Contenido interior principal */
+article{
+    grid-area: article;
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Fin contenido interior principal */
+
+/*Caja interna del scroll la tabla*/
+article > div{
+    overflow-y: scroll;
+    padding-top: 5rem;
+}
+/* Fin caja interna del scroll la tabla*/
+
+/* Footer */
+footer{
+    grid-area: footer;
+    background-color: #EBEBEB;
+    border-top: 1px solid black;
+}
+/* Fin footer */
+
+/* Media query adaptable */
+@media screen and (max-width:768px){
+    .contenedor_global{
+        grid-template-areas: "header header header header header"
+                             "article article article article article"
+                             "article article article article article"
+                             "footer footer footer footer footer";
+    }
+    nav{
+        display: none;
+    }
+    .modal-backdrop{
+        display:none;
+    }
+    .nav-item{
+        display: block;
+    }
+    .imagen1{
+        padding-left: 0px;
+        border-right: 1px solid white;
+    }
+    .imagen2{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+/* Fin media query adaptable */

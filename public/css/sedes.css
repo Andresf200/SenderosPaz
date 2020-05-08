@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.contenedor_global{
+    height: 160vh;
+    background-color:#FFFFFF;
+
+}
+header{
+    background: linear-gradient(200deg, rgb(12, 54, 65) 55%, rgb(12, 54, 65) 69%, rgb(124, 206, 233) 69%);
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+}
+.dropdown-menu{
+    background-color: #0C3641;
+}
+nav{
+    display: flex;
+}
+
+.buttons{
+    color: white;
+    font-size: 1rem;
+    border-left: 1px solid  white;
+}.button-menu{
+     color: white;
+     font-size: 1rem;
+     border: 1px solid  white;
+ }
+
+article{
+    height:74%;
+
+}
+.title{
+border: solid 1px black;
+    height: 7%;
+    display: flex;
+    font-size: 2rem;
+
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    height: 93%;
+}
+.table_sedes{
+    width: 50%;
+
+}
+.imagen_sedes{
+    width: 50%;
+}
+.texto_img{
+    display: flex;
+    padding-top: 6rem;
+}
+
+
+footer{
+    background: linear-gradient(130deg, rgb(12, 54, 65) 55%, rgb(12, 54, 65) 69%, rgb(124, 206, 233) 69%);
+    height: 18%;
+}
+.logo_footer{
+    background-color: #0C3641;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+}
+.texto_footer{
+    color: white;
+    font-size: 18px;
+    display: flex;
+flex-direction: column;
+}
+.icon-footer{
+    font-size: 2rem;
+    color: white;
+}
+
+
